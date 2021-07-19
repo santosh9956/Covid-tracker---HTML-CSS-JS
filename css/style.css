@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.all_content{
+    height: 100vh;
+}
+
+.login_main_content{
+    /* border: 2px solid red; */
+    border-radius:5px ;
+    width: 40%;
+    background: white;
+    box-shadow: 5px 10px 20px black;
+}
+
+
+body{
+  
+    background-image: url('http://i.stack.imgur.com/spmUM.gif');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+/* ------------------signup content  -----------------  */
+
+.signup_content{
+   
+    /* height: 100vh; */
+    background:rgb(7, 224, 231);
+}
+
+.all_signup_content{
+    width: 60%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.74);
+}
+
+
+.success , .invalid{
+    position: absolute;
+    left: 0;
+}
+
+.hide{
+    display: none;
+}
+
+#valid-num{
+    color: green;
+}
+
+#error-num{
+    color: red;
+}
+
+/* ----------------------covid section -----------------------  */
+
+/* .covid-head{
+    background-color: rgba(240, 250, 106, 0.575);
+} */
+
+.selected_state{
+    height: 3rem;
+    border: 1px solid rgba(0, 0, 0, 0.733);
+}
+
+.input_section{
+    background-color: rgba(97, 92, 92, 0.123);
+}
+
+.all_content_covid_tracker{
+    background-color:white;
+}
+
+
+
+.cross_button{
+    position: absolute;
+    top: 0;
+    left: 120px;
+}
+.covid-head{
+    background-color: rgba(33, 154, 235, 0.884);
+    color: white;
+}
+
+.logout_button a{
+ text-decoration: none;
+ font-weight: 500;
+}
+
+
+.block{
+    display: block !important;
+}
+
+
+
+@media (max-width:800px){
+    .login_main_content{
+        width: 80%;
+    }
+}
+
+@media (max-width:576px){
+    .login_main_content{
+        width: 90%;
+     
+    }
+
+    .input_section::-webkit-scrollbar {
+        display: none;
+      }
+
+    .all_content_covid_tracker{
+        height: auto;
+        background-color: rgba(222, 184, 135, 0.815);
+    }
+
+
+    .covid-head{
+        background-color: #ffc80000;
+    }
+    
+    .input_section{
+        position: absolute;
+        border-radius: 10px;
+        width: 30vw;
+        display: none;
+        height: 80vh;
+        overflow-y: auto;
+        /* z-index: 1; */
+        background-color: rgb(192, 185, 185);
+    }
+
+    .signup_content{
+        padding: 0 !important;
+    }
+
+    .all_signup_content{
+        width: 100%;
+    }
+
+    .button{
+        display: block;
+    }
+
+    .heading_text h5{
+        font-size: 14px;
+    }
+}
+
+
+
+

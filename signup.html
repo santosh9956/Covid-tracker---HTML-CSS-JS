@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+  />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Signup Page</title>
+  </head>
+  <body>
+    <div class="signup_content d-flex justify-content-center align-items-center p-5">
+        <div class="all_signup_content p-4">
+            <div class="signup_heading d-flex justify-content-center">
+                <marquee width="40%" direction="left" height="50px">
+                    Welcome to the Signup Page &#128512;
+                  </marquee>
+            </div>
+            <form >
+                <div class="mb-3 row ">
+                    <label for="firstname1" class="form-label col-12 col-md-6"
+                        >First Name 
+                        <input type="text" class="form-control" id="firstname" /> 
+                    </label>
+                  
+                    <label for="lastname1" class="form-label col-12 col-md-6"
+                    >Last Name
+                    <input type="text" class="form-control" id="lastname" /> 
+                    </label> 
+                </div>
+
+                <div class="mb-3">
+                    <label for="signupEmail" class="form-label"
+                      >Email address</label
+                    >
+                    <input
+                    placeholder="email@gmail.com"
+                      type="email"
+                      class="form-control"
+                      id="signupEmail"
+                      aria-describedby="emailHelp"
+                      required />
+                    <div id="emailHelp" class="form-text">
+                      We'll never share your email with anyone else.
+                    </div>
+                </div>
+
+            <div class="mb-3 row justify-content-between">
+                <label for="exampleInputPassword1" class="form-label col-12 col-md-6"
+                    >Password
+                    <input type="password" class="form-control" id="signPassword" /> 
+                </label>
+              
+                <label for="exampleInputPassword1" class="form-label col-12 col-md-6"
+                >Confirm Password
+                <input type="password" class="form-control" id="signConfirmPassword" /> 
+                </label> 
+            </div>
+
+            <div class="mb-3 row justify-content-between">
+                <label for="birthdate" class="form-label col-12 col-md-6"
+                    >D.O.B
+                    <input type="date" class="form-control" id="birthdate" /> 
+                </label>
+
+                <label for="address" class="form-label col-12 col-md-6"
+                >address 
+                <input id="address" class="form-control pac-input" type="text" placeholder="address" 
+                value=""/> 
+                </label>
+          
+            </div>
+
+            <div class="phone_number mb-3">
+                <label for="telephone" class="form-label col-12 col-md-6"
+                >Phone Number  </label><br>
+
+                <input type="tel" id="phone" class="form-control " placeholder="Number..."
+                required />
+
+                  <span id="valid-num" class="hide">✓ Success ...</span>
+                  <span id="error-num" class="hide"></span>
+                 
+            </div>
+            
+            <div class="form-group mb-4">
+                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+            </div>
+            
+            <div class="form-group mb-3">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                  <label class="form-check-label" for="invalidCheck">
+                    Agree to terms and conditions
+                  </label>
+                  <div class="invalid-feedback">
+                    You must agree before submitting.
+                  </div>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-between ">
+                <input type="submit" class="btn btn-primary" value="Submit"  id="signupsubmit" />
+                <input type="reset" class="btn btn-danger" value="Reset" />
+            </div>
+            </form>
+            
+           
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="/js/script.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDN9vfYnKn3W09icpohL31TmnDlW9q29I&callback=initAutocomplete&libraries=places&v=weekly"
+    async
+    ></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script src="/js/telephone-val.js"></script>
+    <!-- <script>
+        const phoneInputField = document.querySelector("#phone");
+        const phoneInput = window.intlTelInput(phoneInputField, {
+          utilsScript:
+            "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+        });
+      </script> -->
+  </body>
+</html>
